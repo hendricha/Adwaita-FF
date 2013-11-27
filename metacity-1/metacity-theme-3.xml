@@ -93,14 +93,17 @@
 	<distance name="title_vertical_pad" value="6" />
 </frame_geometry>
 
-<frame_geometry name="borderless" has_title="false" rounded_top_left="false" rounded_top_right="false" parent="normal" >
-	<distance name="left_width" value="0" />
-	<distance name="right_width" value="0" />
-	<distance name="bottom_height" value="0" />
-	<distance name="title_vertical_pad" value="0" />
-	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
-	<border name="title_border" left="0" right="0" top="0" bottom="0" />
+<frame_geometry name="borderless" has_title="false" rounded_top_left="false" rounded_top_right="false" parent="border" >
 	<distance name="title_vertical_pad" value="6" />
+</frame_geometry>
+
+
+<frame_geometry name="tiled_left_border" title_scale="medium" rounded_top_left="false" rounded_top_right="false" parent="borderless">
+	<distance name="right_width" value="0" />
+</frame_geometry>
+
+<frame_geometry name="tiled_right_border" title_scale="medium" rounded_top_left="false" rounded_top_right="false" parent="borderless">
+	<distance name="left_width" value="1" />
 </frame_geometry>
 
 <frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" parent="small">
@@ -177,7 +180,7 @@
 	</gradient>
 </draw_ops>
 
-<draw_ops name="titlebar_fill_border_focused">
+<draw_ops name="titlebar_fill_border">
 	<gradient type="vertical" x="0" y="0" width="width" height="42">
 		<color value="gtk:custom(wm_bg_a,blend/gtk:bg[NORMAL]/gtk:base[NORMAL]/0.4)" />
 		<color value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
@@ -216,8 +219,8 @@
 	<include name="rounded_hilight" />
 </draw_ops>
 
-<draw_ops name="rounded_titlebar_border_focused">
-	<include name="titlebar_fill_border_focused" />
+<draw_ops name="rounded_titlebar_border">
+	<include name="titlebar_fill_border" />
 	<include name="rounded_hilight" />
 </draw_ops>
 
@@ -1354,7 +1357,7 @@
 
 <frame_style name="border_focused" geometry="border">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="titlebar" draw_ops="rounded_titlebar_border_focused" />
+	<piece position="titlebar" draw_ops="rounded_titlebar_border" />
 	<piece position="title" draw_ops="title_focused" />
 	<piece position="overlay" draw_ops="rounded_border_focused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
@@ -1381,7 +1384,7 @@
 
 <frame_style name="border_unfocused" geometry="border">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="titlebar" draw_ops="rounded_titlebar_border_focused" />
+	<piece position="titlebar" draw_ops="rounded_titlebar_border" />
 	<piece position="title" draw_ops="title_focused" />
 	<piece position="overlay" draw_ops="rounded_border_focused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
@@ -1408,7 +1411,7 @@
 
 <frame_style name="borderless" geometry="borderless">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="titlebar" draw_ops="titlebar_fill_border_focused" />
+	<piece position="titlebar" draw_ops="titlebar_fill_border" />
 	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
@@ -1628,6 +1631,59 @@
 	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
 </frame_style>
 
+<frame_style name="tiled_left_border" geometry="tiled_left_border">
+	<piece position="entire_background" draw_ops="entire_background_focused" />
+	<piece position="titlebar" draw_ops="titlebar_fill_border" />
+	<piece position="title" draw_ops="title_focused" />
+	<button function="close" state="normal"><draw_ops></draw_ops></button>
+	<button function="close" state="pressed"><draw_ops></draw_ops></button>
+	<button function="maximize" state="normal"><draw_ops></draw_ops></button>
+	<button function="maximize" state="pressed"><draw_ops></draw_ops></button>
+	<button function="minimize" state="normal"><draw_ops></draw_ops></button>
+	<button function="minimize" state="pressed"><draw_ops></draw_ops></button>
+	<button function="menu" state="normal"><draw_ops></draw_ops></button>
+	<button function="menu" state="pressed"><draw_ops></draw_ops></button>
+	<button function="shade" state="normal"><draw_ops></draw_ops></button>
+	<button function="shade" state="pressed"><draw_ops></draw_ops></button>
+	<button function="unshade" state="normal"><draw_ops></draw_ops></button>
+	<button function="unshade" state="pressed"><draw_ops></draw_ops></button>
+	<button function="above" state="normal"><draw_ops></draw_ops></button>
+	<button function="above" state="pressed"><draw_ops></draw_ops></button>
+	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
+	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal"><draw_ops></draw_ops></button>
+	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
+	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+</frame_style>
+
+<frame_style name="tiled_right_border" geometry="tiled_right_border">
+	<piece position="entire_background" draw_ops="entire_background_focused" />
+	<piece position="titlebar" draw_ops="titlebar_fill_border" />
+	<piece position="title" draw_ops="title_focused" />
+	<piece position="overlay" draw_ops="border_left_unfocused" />
+	<button function="close" state="normal"><draw_ops></draw_ops></button>
+	<button function="close" state="pressed"><draw_ops></draw_ops></button>
+	<button function="maximize" state="normal"><draw_ops></draw_ops></button>
+	<button function="maximize" state="pressed"><draw_ops></draw_ops></button>
+	<button function="minimize" state="normal"><draw_ops></draw_ops></button>
+	<button function="minimize" state="pressed"><draw_ops></draw_ops></button>
+	<button function="menu" state="normal"><draw_ops></draw_ops></button>
+	<button function="menu" state="pressed"><draw_ops></draw_ops></button>
+	<button function="shade" state="normal"><draw_ops></draw_ops></button>
+	<button function="shade" state="pressed"><draw_ops></draw_ops></button>
+	<button function="unshade" state="normal"><draw_ops></draw_ops></button>
+	<button function="unshade" state="pressed"><draw_ops></draw_ops></button>
+	<button function="above" state="normal"><draw_ops></draw_ops></button>
+	<button function="above" state="pressed"><draw_ops></draw_ops></button>
+	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
+	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal"><draw_ops></draw_ops></button>
+	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
+	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+</frame_style>
+
 <!-- placeholder for unimplementated styles-->
 <frame_style name="blank" geometry="normal">
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
@@ -1713,6 +1769,10 @@
 	<frame focus="no" state="maximized" style="borderless"/>
 	<frame focus="yes" state="shaded" style="blank"/>
 	<frame focus="no" state="shaded" style="blank"/>
+	<frame version=">= 3.3" focus="yes" state="tiled_left" style="tiled_left_border"/>
+	<frame version=">= 3.3" focus="no" state="tiled_left" style="tiled_left_border"/>
+	<frame version=">= 3.3" focus="yes" state="tiled_right" style="tiled_right_border"/>
+	<frame version=">= 3.3" focus="no" state="tiled_right" style="tiled_right_border"/>
 	<frame focus="yes" state="maximized_and_shaded" style="blank"/>
 	<frame focus="no" state="maximized_and_shaded" style="blank"/>
 </frame_style_set>
