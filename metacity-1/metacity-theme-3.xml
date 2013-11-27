@@ -178,7 +178,7 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_border_focused">
-	<gradient type="vertical" x="0" y="0" width="width*8" height="height*8">
+	<gradient type="vertical" x="0" y="0" width="width+42" height="height+42">
 		<color value="gtk:custom(wm_bg_a,blend/gtk:bg[NORMAL]/gtk:base[NORMAL]/0.4)" />
 		<color value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
 	</gradient>
