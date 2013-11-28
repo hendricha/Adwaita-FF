@@ -90,7 +90,7 @@
 	<distance name="bottom_height" value="1" />
 	<border name="title_border" left="10" right="10" top="0" bottom="0" />
 	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
-	<distance name="title_vertical_pad" value="6" />
+	<distance name="title_vertical_pad" value="7" />
 </frame_geometry>
 
 <frame_geometry name="borderless" has_title="false" rounded_top_left="false" rounded_top_right="false" parent="border" >
