@@ -4,7 +4,7 @@ Metacity window decoration theme for use with Firefox HTitle extension.
 
 ## Installation
 
-1. Install [HTitle](https://addons.mozilla.org/firefox/addon/htitle/) and [Stylish](https://addons.mozilla.org/firefox/addon/stylish/), and probably you also want to use [all this stuff](https://addons.mozilla.org/firefox/collections/seleznev/gnome3/) too.
+1. Install [HTitle 2.6b1 or higher](https://addons.mozilla.org/firefox/addon/htitle/versions) and [Stylish](https://addons.mozilla.org/firefox/addon/stylish/), and probably you also want to use [all this stuff](https://addons.mozilla.org/firefox/collections/seleznev/gnome3/) too.
 
 2. Install the theme
 
