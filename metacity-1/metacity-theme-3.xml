@@ -1363,7 +1363,6 @@
 <frame_style name="border_focused" geometry="border">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
 	<piece position="titlebar" draw_ops="rounded_titlebar_border" />
-	<piece position="title" draw_ops="title_focused" />
 	<piece position="overlay" draw_ops="rounded_border_focused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
@@ -1390,7 +1389,6 @@
 <frame_style name="border_unfocused" geometry="border">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
 	<piece position="titlebar" draw_ops="rounded_titlebar_border" />
-	<piece position="title" draw_ops="title_focused" />
 	<piece position="overlay" draw_ops="rounded_border_focused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
@@ -1417,7 +1415,6 @@
 <frame_style name="borderless" geometry="borderless">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
 	<piece position="titlebar" draw_ops="titlebar_fill_border" />
-	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
 	<button function="maximize" state="normal"><draw_ops></draw_ops></button>
@@ -1639,7 +1636,6 @@
 <frame_style name="tiled_left_border" geometry="tiled_left_border">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
 	<piece position="titlebar" draw_ops="titlebar_fill_border" />
-	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
 	<button function="maximize" state="normal"><draw_ops></draw_ops></button>
@@ -1665,7 +1661,6 @@
 <frame_style name="tiled_right_border" geometry="tiled_right_border">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
 	<piece position="titlebar" draw_ops="titlebar_fill_border" />
-	<piece position="title" draw_ops="title_focused" />
 	<piece position="overlay" draw_ops="border_left_unfocused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
