@@ -9,12 +9,12 @@ Metacity window decoration theme for use with Firefox HTitle extension.
 2. Install the theme
 
   2.1. either using browser
-    - Press right click on [this link](https://raw.github.com/uukr/Adwaita-FF/master/metacity-1/metacity-theme-3.xml) and choose "Save link as..." or similar.
+    - Press right click on [this link](https://raw.github.com/seleznev/Adwaita-FF/master/metacity-1/metacity-theme-3.xml) and choose "Save link as..." or similar.
     - Save it in directory as follows: <code>~/.local/share/themes/Adwaita-FF/metacity-1/metacity-theme-3.xml</code>
 
   2.2. <b>or</b> using terminal
     - locate theme directory: <code>cd ~/.local/share/themes/</code>
-    - clone the repo <code>git clone https://github.com/uukr/Adwaita-FF.git</code>
+    - clone the repo <code>git clone https://github.com/seleznev/Adwaita-FF.git</code>
 
 3.  Switch theme using [GNOME Tweak Tool](https://wiki.gnome.org/Apps/GnomeTweakTool) <b>or</b> typing in terminal: <code>gsettings set org.gnome.desktop.wm.preferences theme "Adwaita-FF"</code>
 
