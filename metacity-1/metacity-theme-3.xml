@@ -156,8 +156,6 @@
 		<color value="gtk:custom(wm_bg_a,blend/gtk:bg[NORMAL]/gtk:base[NORMAL]/0.4)" />
 		<color value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
 	</gradient>
-	<line x1="0" y1="height-1" x2="width-1" y2="height-1" color="blend/gtk:bg[NORMAL]/#000000/0.3" />
-	<line x1="0" y1="height-2" x2="width-1" y2="height-2" color="blend/gtk:bg[NORMAL]/#000000/0.1" />
 	<line x1="width-height" y1="7" x2="width-height" y2="height-8" color="blend/gtk:bg[NORMAL]/#000000/0.1" />
 </draw_ops>
 
@@ -166,8 +164,6 @@
 		<color value="gtk:custom(wm_bg_a,blend/gtk:bg[NORMAL]/gtk:base[NORMAL]/0.4)" />
 		<color value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
 	</gradient>
-	<line x1="0" y1="height-1" x2="width-1" y2="height-1" color="blend/gtk:bg[NORMAL]/#000000/0.3" />
-	<line x1="0" y1="height-2" x2="width-1" y2="height-2" color="blend/gtk:bg[NORMAL]/#000000/0.1" />
 	<line x1="width-height" y1="6" x2="width-height" y2="height-8" color="blend/gtk:bg[NORMAL]/#000000/0.1" />
 </draw_ops>
 
@@ -176,8 +172,6 @@
 		<color value="gtk:custom(wm_bg_a,blend/gtk:bg[NORMAL]/gtk:base[NORMAL]/0.4)" />
 		<color value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
 	</gradient>
-	<line x1="0" y1="height-1" x2="width-1" y2="height-1" color="blend/gtk:bg[NORMAL]/#000000/0.3" />
-	<line x1="0" y1="height-2" x2="width-1" y2="height-2" color="blend/gtk:bg[NORMAL]/#000000/0.1" />
 </draw_ops>
 
 <draw_ops name="border_titlebar_fill_focused">
@@ -190,19 +184,14 @@
 
 <draw_ops name="titlebar_fill_unfocused">
 	<rectangle color="C_titlebar_unfocused" x="0" y="0" width="width" height="height" filled="true" />
-	<line x1="0" y1="height-1" x2="width-1" y2="height-1" color="blend/gtk:bg[NORMAL]/#000000/0.1" />
-	<line x1="width-height" y1="7" x2="width-height" y2="height-8" color="blend/gtk:bg[NORMAL]/#000000/0.1" />
 </draw_ops>
 
 <draw_ops name="titlebar_max_fill_unfocused">
 	<rectangle color="C_titlebar_unfocused" x="0" y="0" width="width" height="height" filled="true" />
-	<line x1="0" y1="height-1" x2="width-1" y2="height-1" color="blend/gtk:bg[NORMAL]/#000000/0.1" />
-	<line x1="width-height" y1="6" x2="width-height" y2="height-8" color="blend/gtk:bg[NORMAL]/#000000/0.1" />
 </draw_ops>
 
 <draw_ops name="buttonless_titlebar_fill_unfocused">
 	<rectangle color="C_titlebar_unfocused" x="0" y="0" width="width" height="height" filled="true" />
-	<line x1="0" y1="height-1" x2="width-1" y2="height-1" color="blend/gtk:bg[NORMAL]/#000000/0.1" />
 </draw_ops>
 
 <draw_ops name="hilight">
