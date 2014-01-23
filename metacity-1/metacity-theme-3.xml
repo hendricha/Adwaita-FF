@@ -86,7 +86,7 @@
 	<distance name="left_width" value="1" />
 </frame_geometry>
 
-<frame_geometry name="modal" parent="normal">
+<frame_geometry name="modal" hide_buttons="true" parent="normal">
 </frame_geometry>
 
 <frame_geometry name="attached" hide_buttons="true" rounded_top_left="4" rounded_top_right="4" rounded_bottom_left="4" rounded_bottom_right="4" parent="normal">
