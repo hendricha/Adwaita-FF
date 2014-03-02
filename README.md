@@ -1,6 +1,7 @@
 # Adwaita-FF
 
 Metacity window decoration theme for use with Firefox HTitle extension.
+This fork shrinks the titlebar a bit, and hides it completely when maximized. (Intended use with environments that have a top panel with optional window controls. Eg. unity-2d-panel, super-wingpanel etc.)
 
 ## Installation
 
